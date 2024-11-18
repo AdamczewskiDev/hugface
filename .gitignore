@@ -1,0 +1,84 @@
+# Pliki i katalogi podstawowe
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Katalogi dla środowiska wirtualnego
+venv/
+env/
+.venv/
+venv3/
+env3/
+
+# Pliki konfiguracyjne i hasła
+*.env
+.env.*
+.env.local
+
+# Pliki dzienników
+*.log
+logs/
+
+# Pliki kompilacji i tymczasowe
+*.py[cod]
+*$py.class
+
+# Pliki IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.user
+*.sln.docstates
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Pliki bazy danych lokalnej
+*.db
+*.sqlite
+*.sqlite3
+
+# Pliki wygenerowane przez Google Cloud SDK
+.gcloudignore
+.gcloud/
+.gcloudsdk/
+
+# Pliki innych narzędzi
+*.bak
+*.swp
+*.swo
+
+# Pliki dokumentacji
+docs/_build/
+docs/build/
+
+# Pliki testowe
+tests/__pycache__/
+tests/*.pyc
+tests/*.pyo
+tests/*.pyd
+
+# Pliki zależności zbudowanych
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+
+# Pliki specyficzne dla systemu operacyjnego
+*.o
+*.so
+*.dll
+*.exe
+*.a
+*.dylib
+
+# Pliki pokrycia testów
+.coverage
+htmlcov/

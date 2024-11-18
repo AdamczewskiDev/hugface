@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Edytuj Wpłatę</h2>
+    <form method="POST">
+        <label for="amount">Kwota:</label>
+        <input type="text" id="amount" name="amount" value="{{ income['amount'] }}" required>
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" value="{{ income['date'] }}" required>
+        <button type="submit">Zapisz Zmiany</button>
+    </form>
+    <a href="{{ url_for('incomes') }}">Wróć do listy wpłat</a>
+{% endblock %}

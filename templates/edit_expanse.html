@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Edytuj Wydatek</h2>
+    <form method="POST">
+        <label for="category">Kategoria:</label>
+        <input type="text" id="category" name="category" value="{{ expense['category'] }}" required>
+        <label for="amount">Kwota:</label>
+        <input type="text" id="amount" name="amount" value="{{ expense['amount'] }}" required>
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" value="{{ expense['date'] }}" required>
+        <button type="submit">Zapisz Zmiany</button>
+    </form>
+    <a href="{{ url_for('expenses') }}">Wróć do listy wydatków</a>
+{% endblock %}
